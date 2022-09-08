@@ -16,3 +16,50 @@
   border-radius: 10px;
   font-size: 20px;
 }
+
+.display-wallet {
+  display: flex;
+}
+
+.wallet-address {
+  padding: 23px 0 0 10px;
+}
+
+.nft-container {
+  width: 80%;
+  height: 300px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+  margin: 10px 0;
+}
+
+.nft-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-color: beige;
+}
+
+.nft-tile {
+  width: 20%;
+  margin: 0 20px;
+}
+
+.nft-title {
+  height: 50px;
+}
+
+.nft-img {
+  height: 100px;
+}
+
+.nft-description {
+  height: 30px;
+  overflow: scroll;
+  border: solid 1px black;
+}
