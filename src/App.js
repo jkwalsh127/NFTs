@@ -103,7 +103,7 @@ function App() {
       <div className="nft-container">
         <h2>LearnWeb3 NFTs</h2>
         {
-          learnweb3.length !== 0 ?
+          learnweb3.length ?
             <div className="nft-wrapper">
               {
                 learnweb3.map((nft) => (
@@ -122,7 +122,7 @@ function App() {
       <div className="nft-container">
         <h2>Buildspace NFTs</h2>
         {
-          buildspace.length !== 0 ?
+          buildspace.length ?
             <div className="nft-wrapper">
               {
                 buildspace.map((nft) => (
@@ -141,7 +141,7 @@ function App() {
       <div className="nft-container">
         <h2>Other NFTs</h2>
         {
-          others.length !== 0 ?
+          others.length ?
             <div className="nft-wrapper">
               {
                 others.map((nft) => (
