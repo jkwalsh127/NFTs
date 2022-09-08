@@ -6,9 +6,9 @@ function App() {
   // Use state to track:
   // if a user's browser has the MetaMask plugin installed, and 
   // the user's wallet, once connected through MetaMask
+  // the NFTs present within the wallet that were fetched from OpenSea
   const [plugin, setPlugin] = useState("");
   const [wallet, setWallet] = useState("");
-
   const [nfts, setNfts] = useState([]);
 
   // We want to detect if the user has MetaMask installed every time this component loads
@@ -93,7 +93,14 @@ function App() {
       </div>
       <div>
         {
-          
+          nfts.map((nft) => (
+            <>
+              <p>{nft.name}</p>
+              <img src={nft.image_url} alt=""></img>
+              <p>{nft.description}</p>
+              <a href={nft.permalink} target="_blank" rel="noreferrer">View on OpenSea</a>
+            </>
+          ))
         }
       </div>
     </div>
