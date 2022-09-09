@@ -1,15 +1,44 @@
+body {
+  margin: 0;
+}
+
 .app {
   width: 100vw;
-  height: 100vh; 
+  height: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(-93deg, #843aceca,#fd2b89ba,#843ace97,#fd2b89ba);
+}
+
+.content-container {
+  width: 80%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid #fd2b8963;
+  border-right: 5px solid #843ace84;
+  background-image: linear-gradient(-93deg, #ffffffe0, #ffffffe3);
+  ;
+}
+
+.header-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .metamask-login-btn {
   height: 40px;
-  width: 200px;
   background-color: blue;
   color: white;
   border: none;
@@ -19,47 +48,46 @@
 
 .display-wallet {
   display: flex;
+  margin: 10px 0 0 0;
 }
 
-.wallet-address {
-  padding: 23px 0 0 10px;
-}
-
-.nft-container {
+.collection-container {
   width: 80%;
-  height: 300px;
-  background-color: aquamarine;
+  min-height: 235px;
+  background-image: linear-gradient(to bottom right, #f7edf4, #d0c9d4);
+  box-shadow: 4px 4px 15px #ccbed1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  overflow: scroll;
   margin: 10px 0;
+  padding: 10px 10px;
+  overflow: scroll;
+  border: 2px outset rgb(176, 160, 191);
+  border-radius: 10px;
 }
 
 .nft-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 100%;
-  background-color: beige;
+  flex-wrap: wrap;
+  align-self: center;
+  background-image: linear-gradient(to bottom right, #d2c6dd, #9f93a7);
+  border: inset 1px rgb(191, 191, 191);
+  overflow: scroll;
+  width: 95%;
+  border-radius: 15px;
 }
 
 .nft-tile {
   width: 20%;
-  margin: 0 20px;
-}
-
-.nft-title {
-  height: 50px;
+  min-width: 170px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .nft-img {
-  height: 100px;
-}
-
-.nft-description {
-  height: 30px;
-  overflow: scroll;
-  border: solid 1px black;
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 5px;
 }
